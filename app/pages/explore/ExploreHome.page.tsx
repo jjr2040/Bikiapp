@@ -75,7 +75,7 @@ export class ExploreHome extends Component<ExploreHomeProps, ExploreHomeState> {
     return (
       <Container>
         <Content padder>
-          { this.renderSearchHeader() }
+          {/* { this.renderSearchHeader() } */}
           { 
             this.state.loading && 
             <View style={styles.loadingContainer}>

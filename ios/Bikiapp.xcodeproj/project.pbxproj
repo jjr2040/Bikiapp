@@ -23,6 +23,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		1B1B42FE227E659C004F3B97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B1B42FD227E659C004F3B97 /* GoogleService-Info.plist */; };
+		1B1B42FF227E659C004F3B97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B1B42FD227E659C004F3B97 /* GoogleService-Info.plist */; };
 		1B3BD9AD2273251C0066A329 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		1B3BD9AE2273251C0066A329 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1B3BD9B12273251C0066A329 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B08E11E2270C8A400E6B9A7 /* libRNGestureHandler.a */; };
@@ -59,7 +61,6 @@
 		1B3BD9D22273251C0066A329 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7680325769ED4DBDADBEBF2E /* rubicon-icon-font.ttf */; };
 		1B3BD9D32273251C0066A329 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05CA131533444321B76A4F24 /* SimpleLineIcons.ttf */; };
 		1B3BD9D42273251C0066A329 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F2A8F5442B4EF7B5FB27BE /* Zocial.ttf */; };
-		1B3BD9DD22737B6B0066A329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B3BD9DC22737B6B0066A329 /* GoogleService-Info.plist */; };
 		1B3BDAB02273822D0066A329 /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3BDAAA2273821C0066A329 /* libReactNativeConfig.a */; };
 		1BB2048F22711DED001395E9 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B08E11E2270C8A400E6B9A7 /* libRNGestureHandler.a */; };
 		25C33565FA96493CACC0DA69 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B99A9A1E0A944238B3B1547 /* Feather.ttf */; };
@@ -425,9 +426,9 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Bikiapp/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		191AA28B8582412D81A7BA33 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		1B1B42FD227E659C004F3B97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B3BD9DA2273251C0066A329 /* BikiappAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikiappAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3BD9DB2273251C0066A329 /* Bikiapp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Bikiapp copy-Info.plist"; path = "/Users/juanvillegas/Documents/MISO/Fabricas y lineas de producto/bikiapp/grupo1/client/Bikiapp/ios/Bikiapp copy-Info.plist"; sourceTree = "<absolute>"; };
-		1B3BD9DC22737B6B0066A329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B3BDA7E2273821C0066A329 /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeConfig.xcodeproj; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; };
 		25743959429841249FE6D14B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		2B596B538B0B411084DF1F45 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
@@ -623,10 +624,10 @@
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				1B1B42FD227E659C004F3B97 /* GoogleService-Info.plist */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				1B3BD9DC22737B6B0066A329 /* GoogleService-Info.plist */,
 			);
 			name = Bikiapp;
 			sourceTree = "<group>";
@@ -1353,7 +1354,7 @@
 				66DF6216B8704170AD6AE10D /* rubicon-icon-font.ttf in Resources */,
 				295CD450D10445E6941257CA /* SimpleLineIcons.ttf in Resources */,
 				EED5B30AE5AF42F49799C00F /* Zocial.ttf in Resources */,
-				1B3BD9DD22737B6B0066A329 /* GoogleService-Info.plist in Resources */,
+				1B1B42FE227E659C004F3B97 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1381,6 +1382,7 @@
 				1B3BD9D22273251C0066A329 /* rubicon-icon-font.ttf in Resources */,
 				1B3BD9D32273251C0066A329 /* SimpleLineIcons.ttf in Resources */,
 				1B3BD9D42273251C0066A329 /* Zocial.ttf in Resources */,
+				1B1B42FF227E659C004F3B97 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
