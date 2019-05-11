@@ -11,6 +11,7 @@ export default jest.mock('react-navigation', () => {
       },
       NavigationActions: {
           navigate: jest.fn().mockImplementation(x => x),
+          getParam: jest.fn().mockReturnValue('')
       }
   }
 });

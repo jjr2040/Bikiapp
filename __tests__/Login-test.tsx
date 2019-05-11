@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer'
 import { LoginForm } from '../app/pages/user/LoginForm.page';
 import { RegisterForm } from '../app/pages/user/RegisterForm.page';
 import { VerifyCodeForm } from '../app/pages/user/VerifyCodeForm.page';
+import { NavigationActions } from 'react-navigation';
 
 jest.useFakeTimers();
 
@@ -18,6 +19,9 @@ test('register renders correctly', () => {
 });
 
 test('verify code renders correctly', () => {
-  const tree = renderer.create(<VerifyCodeForm />).toJSON();
+  const navigation = { getParam: jest.fn().mockReturnValue('jj.villegas47@gmail.com') };
+  const tree = renderer.create(
+    <VerifyCodeForm navigation={ navigation }/>
+  ).toJSON();
   expect(tree).toMatchSnapshot();
 });

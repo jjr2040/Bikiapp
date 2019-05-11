@@ -20,7 +20,7 @@ interface ExploreHomeState {
 export class ExploreHome extends Component<ExploreHomeProps, ExploreHomeState> {
 
   static navigationOptions = {
-      title: 'Explora '
+      title: 'Explora'
   }
 
   state: ExploreHomeState = {
