@@ -29,7 +29,8 @@ export class BikeServiceForm extends Component<BikeServiceFormProps, BikeService
       address: '',
       description: '',
       type: '',
-      name: ''
+      name: '',
+      price: 0
     },
     errorMessage: undefined
   }
@@ -55,7 +56,8 @@ export class BikeServiceForm extends Component<BikeServiceFormProps, BikeService
         address: '',
         description: '',
         type: '',
-        name: ''
+        name: '',
+        price: 0
       };
       this.setState({loading: false, service: newService});
       Toast.show({
@@ -128,6 +130,14 @@ export class BikeServiceForm extends Component<BikeServiceFormProps, BikeService
               <Input value={this.state.service.address} onChangeText={ text => {  
                 let service = this.state.service;
                 service.address = text;
+                this.setState({service: service});
+              }} />
+            </Item>
+            <Item floatingLabel>
+              <Label>Precio</Label>
+              <Input value={ '' + this.state.service.price} onChangeText={ text => {  
+                let service = this.state.service;
+                service.price = text == '' ? 0 : parseFloat(text);
                 this.setState({service: service});
               }} />
             </Item>

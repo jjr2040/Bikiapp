@@ -6,4 +6,5 @@ export interface BikeService {
   description: string;
   type: string;
   name: string;
+  price: number;
 }

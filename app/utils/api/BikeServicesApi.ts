@@ -3,7 +3,7 @@ import axios from 'axios'
 import Config from 'react-native-config'
 
 const client = axios.create({
-  baseURL: 'https://bikiservices.herokuapp.com/services',
+  baseURL: 'https://bikiservices.herokuapp.com/services/',
   timeout: 6000,
   headers: {
     'bikiapp-agent': Config.BIKIAPP_AGENT
@@ -21,7 +21,8 @@ export function fetchBikeServices(): Promise<BikeService[]> {
         address: obj.Address,
         description: obj.Description,
         type: obj.Type,
-        name: obj.Name
+        name: obj.Name,
+        price: obj.Price
       }
     });
 
@@ -32,11 +33,12 @@ export function fetchBikeServices(): Promise<BikeService[]> {
 export function createBikeService(service: BikeService){
 
   const body = {
-    Phone: service.phone,
-    Address: service.address,
-    Description: service.description,
-    Type: service.type,
-    Name: service.name
+    phone: service.phone,
+    address: service.address,
+    description: service.description,
+    type: service.type,
+    name: service.name,
+    price: service.price
   }
 
   return client.post('', body);
