@@ -16,7 +16,7 @@ import LoginRegisterRoute from './app/routes/LoginRegister.route'
 import HomeTabBarRoute from './app/routes/HomeTabBar.route'
 import { PersistGate } from 'redux-persist/integration/react'
 import { activateFirebase } from './app/config/FBRemoteConfig'
-import { StyleProvider } from 'native-base';
+import { StyleProvider, Root } from 'native-base';
 import getTheme from './native-base-theme/components';
 import platform from './native-base-theme/variables/platform';
 
@@ -41,7 +41,9 @@ export default class App extends Component<Props> {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <StyleProvider style={getTheme(platform)}>
-            <AppContainer />
+            <Root>
+             <AppContainer />
+            </Root>   
           </StyleProvider>
         </PersistGate>
       </Provider>

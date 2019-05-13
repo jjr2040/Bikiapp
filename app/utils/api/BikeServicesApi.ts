@@ -28,3 +28,16 @@ export function fetchBikeServices(): Promise<BikeService[]> {
     return services
   });
 }
+
+export function createBikeService(service: BikeService){
+
+  const body = {
+    Phone: service.phone,
+    Address: service.address,
+    Description: service.description,
+    Type: service.type,
+    Name: service.name
+  }
+
+  return client.post('', body);
+}

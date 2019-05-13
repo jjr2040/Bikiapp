@@ -1,6 +1,6 @@
 
 export interface BikeService {
-  id: string;
+  id?: string;
   phone: string;
   address: string;
   description: string;
